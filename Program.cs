@@ -20,3 +20,8 @@ Console.WriteLine();
 
 DVD dvd = new DVD("Criminal Case of Natalia Grace", "1.30 hrs");
 dvd.ShowInfo();
+
+Console.WriteLine();
+
+FineCalculator fc = new FineCalculator(35);
+fc.showFine();
