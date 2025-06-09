@@ -8,7 +8,7 @@
 
 using LibManagement;
 
-Book book = new Book("Harry Potter", "JK Rowling", "124676");
+Book book = new Book("Harry Potter", "JK Rowling", "12466");
 book.FetchDetails();
 
 Console.WriteLine();

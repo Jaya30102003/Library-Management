@@ -11,6 +11,23 @@ class Book : LibraryItem
         base.Title = title;
         Author = author;
         ISBN = isbn;
+        try
+        {
+            if (ISBN.Length < 6)
+            {
+                throw new InvalidISBN("Atleast 6 characters please");
+            }
+        }
+
+        catch (InvalidISBN ex)
+        {
+            Console.WriteLine($"{ex.Message}");
+        }
+
+        finally
+        {
+            Console.WriteLine("ISBN Mandatory condition is checked");
+        }
     }
 
     public void FetchDetails() 
