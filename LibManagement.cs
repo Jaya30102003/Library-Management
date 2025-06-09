@@ -12,6 +12,8 @@ class LibraryItem
         Title = title;
     }
 
+    public LibraryItem(){}
+
     public LibraryItem(string title)
     {
         Title = title;
@@ -19,6 +21,6 @@ class LibraryItem
 
     public void ShowInfo()
     {
-        Console.WriteLine($" {Id} Title : {Title}");
+        Console.WriteLine($"Title : {Title}");
     }
 }
